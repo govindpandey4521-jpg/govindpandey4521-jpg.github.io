@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/industry-76a8f083-3a88-4490-b03f-038f18558048/styles.css">
+  <script src="_ds/industry-76a8f083-3a88-4490-b03f-038f18558048/_ds_bundle.js"></script>
+  <style>
+    body { margin: 0; background: var(--color-bg); }
+    a { color: var(--color-accent-700); text-decoration: none; }
+    a:hover { color: var(--color-accent-900); text-decoration: underline; }
+  </style>
+</helmet>
+
+<div style="max-width: 900px; margin: 0 auto; padding: 0 var(--space-6);">
+
+  <nav class="nav" style="margin-top: var(--space-6);">
+    <div class="nav-brand">Govind Pandey</div>
+    <a href="./index.html">&larr; Back to home</a>
+  </nav>
+
+  <section style="padding: var(--space-8) 0 var(--space-6);">
+    <div class="tag tag-accent" style="margin-bottom: var(--space-4);">Data Warehousing</div>
+    <h1 style="font-family: var(--font-heading); font-size: 48px; line-height: 1.1; margin: 0 0 var(--space-4);">Bank Data Warehousing &amp; Reporting Platform</h1>
+    <div class="card-meta" style="font-size: 16px;">Fiji-based banking client</div>
+  </section>
+
+  <section style="display:grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-4); padding-bottom: var(--space-8);">
+    <div class="card blueprint">
+      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <div class="card-kicker">Stack</div>
+      <div class="card-body" style="margin-top:var(--space-2);">Databricks · PySpark · SQL · Salesforce (source) · Tableau</div>
+    </div>
+    <div class="card blueprint">
+      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <div class="card-kicker">Architecture</div>
+      <div class="card-body" style="margin-top:var(--space-2);">Medallion — Bronze &rarr; Silver &rarr; Gold</div>
+    </div>
+    <div class="card blueprint">
+      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <div class="card-kicker">Patterns</div>
+      <div class="card-body" style="margin-top:var(--space-2);">SCD Type 2 · History tables · Dashboarding on curated gold data</div>
+    </div>
+  </section>
+
+  <section style="padding-bottom: var(--space-8); border-top: 1px solid var(--color-neutral-300); padding-top: var(--space-8);">
+    <h2 style="font-family: var(--font-heading); font-size: 28px; margin: 0 0 var(--space-4);">What I did</h2>
+    <ul style="font-size: 17px; line-height: 1.75; color: var(--color-neutral-800); padding-left: 20px; margin:0;">
+      <li>Ingested Salesforce data into the Bronze layer.</li>
+      <li>Built Silver transformations — cleansing, type-casting, deduplication.</li>
+      <li>Implemented SCD Type 2 logic with History tables.</li>
+      <li>Curated business-ready Gold datasets.</li>
+      <li>Built Tableau dashboards on top of Gold.</li>
+    </ul>
+  </section>
+
+  <section style="padding-bottom: calc(var(--space-8) * 1.5); border-top: 1px solid var(--color-neutral-300); padding-top: var(--space-8);">
+    <h2 style="font-family: var(--font-heading); font-size: 28px; margin: 0 0 var(--space-4);">Outcome</h2>
+    <p style="font-size: 17px; line-height: 1.7; color: var(--color-neutral-800); max-width: 640px; margin:0;">A centralized warehouse and reporting layer that gave the bank a single, auditable source of truth.</p>
+  </section>
+
+</div>
+
+</x-dc>
+</body>
+</html>

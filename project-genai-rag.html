@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/industry-76a8f083-3a88-4490-b03f-038f18558048/styles.css">
+  <script src="_ds/industry-76a8f083-3a88-4490-b03f-038f18558048/_ds_bundle.js"></script>
+  <style>
+    body { margin: 0; background: var(--color-bg); }
+    a { color: var(--color-accent-700); text-decoration: none; }
+    a:hover { color: var(--color-accent-900); text-decoration: underline; }
+  </style>
+</helmet>
+
+<div style="max-width: 900px; margin: 0 auto; padding: 0 var(--space-6);">
+
+  <nav class="nav" style="margin-top: var(--space-6);">
+    <div class="nav-brand">Govind Pandey</div>
+    <a href="./index.html">&larr; Back to home</a>
+  </nav>
+
+  <section style="padding: var(--space-8) 0 var(--space-6);">
+    <div class="tag tag-accent" style="margin-bottom: var(--space-4);">GenAI</div>
+    <h1 style="font-family: var(--font-heading); font-size: 48px; line-height: 1.1; margin: 0 0 var(--space-4);">GenAI Document Extraction &amp; RAG</h1>
+    <div class="card-meta" style="font-size: 16px;">US solar financing platform</div>
+  </section>
+
+  <section style="display:grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-4); padding-bottom: var(--space-8);">
+    <div class="card blueprint">
+      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <div class="card-kicker">Stack</div>
+      <div class="card-body" style="margin-top:var(--space-2);">AWS Bedrock · S3 · Lambda · Textract · pypdf · Docker · EC2 · ECS · ECR</div>
+    </div>
+    <div class="card blueprint">
+      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <div class="card-kicker">Pipeline</div>
+      <div class="card-body" style="margin-top:var(--space-2);">PDF extraction &rarr; DynamoDB/S3 &rarr; results back to Salesforce</div>
+    </div>
+    <div class="card blueprint">
+      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <div class="card-kicker">PM &amp; versioning</div>
+      <div class="card-body" style="margin-top:var(--space-2);">GitHub for code, Jira for project management</div>
+    </div>
+  </section>
+
+  <section style="padding-bottom: var(--space-8); border-top: 1px solid var(--color-neutral-300); padding-top: var(--space-8);">
+    <h2 style="font-family: var(--font-heading); font-size: 28px; margin: 0 0 var(--space-4);">What I did</h2>
+    <ul style="font-size: 17px; line-height: 1.75; color: var(--color-neutral-800); padding-left: 20px; margin:0;">
+      <li>Built document extraction using Python, pypdf and Textract, deployed on Lambda/S3.</li>
+      <li>Used an LLM to cross-check extracted values and adjust a confidence score based on text-matching agreement.</li>
+      <li>Added dynamic validation logic (e.g. dates can't post-date 2050) alongside other business rules.</li>
+      <li>Deployed and managed services with Docker across EC2, ECS and ECR.</li>
+      <li>Contributed to internal Databricks PoCs — Accelerators, AppKit, Replit semantic-layer, Genie.</li>
+    </ul>
+  </section>
+
+  <section style="padding-bottom: calc(var(--space-8) * 1.5); border-top: 1px solid var(--color-neutral-300); padding-top: var(--space-8);">
+    <h2 style="font-family: var(--font-heading); font-size: 28px; margin: 0 0 var(--space-4);">Outcome</h2>
+    <p style="font-size: 17px; line-height: 1.7; color: var(--color-neutral-800); max-width: 640px; margin:0;">An automated, confidence-scored extraction pipeline that turns unstructured PDFs into structured, validated data flowing back into Salesforce.</p>
+  </section>
+
+</div>
+
+</x-dc>
+</body>
+</html>
